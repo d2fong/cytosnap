@@ -154,7 +154,7 @@ proto.shot = function( opts, next ){
         alert('layoutstop');
       });
 
-      cy.layout( options.layout );
+      cy.makeLayout( options.layout ).run();
     });
 
     return Promise.all([ finishing, evalling ]);
